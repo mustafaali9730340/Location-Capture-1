@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Location Finder Admin</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="topbar">
+        <div>
+          <p class="eyebrow">Consent location finder</p>
+          <h1>Admin dashboard</h1>
+        </div>
+        <button id="refreshBtn" class="iconButton" title="Refresh check-ins" aria-label="Refresh check-ins">
+          <span aria-hidden="true">R</span>
+        </button>
+      </section>
+
+      <section class="panel">
+        <div class="panelHeader">
+          <div>
+            <h2>Create a share link</h2>
+            <p>Anyone who opens it will be told exactly what is being shared before their browser asks for location access.</p>
+          </div>
+        </div>
+        <form id="linkForm" class="linkForm">
+          <label>
+            Link label
+            <input id="labelInput" name="label" type="text" maxlength="80" placeholder="Delivery check-in, site visit, meetup...">
+          </label>
+          <button type="submit">Generate link</button>
+        </form>
+        <div id="newLinkBox" class="resultBox" hidden>
+          <span id="newLinkText"></span>
+          <button id="copyBtn" type="button">Copy</button>
+        </div>
+      </section>
+
+      <section class="split">
+        <article class="panel">
+          <h2>Generated links</h2>
+          <div id="linksList" class="list empty">No links yet.</div>
+        </article>
+        <article class="panel">
+          <h2>Received locations</h2>
+          <div id="checkInsList" class="list empty">No locations shared yet.</div>
+        </article>
+      </section>
+    </main>
+    <script src="/admin.js" type="module"></script>
+  </body>
+</html>

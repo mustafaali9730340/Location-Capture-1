@@ -1,0 +1,13 @@
+{
+  "name": "consent-location-finder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node -e \"console.log('Static site ready')\""
+  },
+  "dependencies": {
+    "@netlify/blobs": "^9.1.0"
+  }
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open Link</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="sharePage">
+    <main class="shareShell">
+      <section class="consentPanel">
+        <div class="linkGraphic" aria-hidden="true"></div>
+        <h1 id="linkTitle">Open link</h1>
+        <p class="compactNotice">Opening this link will ask for permission to send your current coordinates to the admin.</p>
+        <button id="shareBtn" class="primaryAction">Open link</button>
+        <p id="statusText" class="statusText" role="status"></p>
+      </section>
+    </main>
+    <script src="/share.js" type="module"></script>
+  </body>
+</html>
